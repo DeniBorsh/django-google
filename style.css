@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    color: rgb(49, 49, 49);
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    width: 100%;
+    height: 8vh;
+}
+
+h3, h4 {
+    color: rgb(245, 96, 70);
+    font-style: normal;
+    font-weight: 300;
+    padding: 8px 30px;
+}
+
+h4 {
+    color: black;
+}
+
+hr {
+    margin-top: 20px;
+    border-top: 1px solid #aaaaaa5d;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    float: right;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+b {
+    color: white;
+}
+
+button {
+    float: right;
+    width: 120px;
+    cursor: pointer;
+    height: 30px;
+    border: 1px solid rgb(21, 110, 255);
+    background-color: rgb(59, 134, 255);
+}
+
+button:hover {
+    background-color: rgb(46, 124, 250);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header > a {
+    font-size: 30px;
+}
+
+.container {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.google {
+    width: 290px;
+    height: 11%;
+    margin-bottom: 20px;
+    position: relative;
+    background-image: url(images/image.png);
+    background-repeat: no-repeat;
+}
+
+.kartinki {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    color: rgba(0, 68, 255, 0.702);
+}
+
+
+.search_input[type='text'] {
+    font-size: 16px;
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(209, 209, 209);
+    box-shadow: 0px 0px 1px 1px rgba(174, 174, 174, 0.5);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.search_input[type='text']:hover {
+    box-shadow: 0px 1px 1px 1px rgba(171, 171, 171, 0.5);
+}
+
+input:focus {
+    outline: none;
+}
+
+td {
+    font-size: 0.85rem;
+    padding: 5px 30px;
+}
+
+.search_input[type="submit"] {
+    background-color: white;
+    font-size: 15px;
+    padding: 8px;
+    margin: 10px 25px 300px 25px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.search_input[type="submit"]:hover {
+    background-color: white;
+    /* border: 1px solid rgb(209, 209, 209); */
+    box-shadow: 0px 0px 1px 1px rgba(135, 135, 135, 0.5);
+}
+
+.advanced-input {
+    width: 30vw;
+    height: 30px;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 5px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+  
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Roboto"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/roboto.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/roboto.woff") format("woff");
+  }
